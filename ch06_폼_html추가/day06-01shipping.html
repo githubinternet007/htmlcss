@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수업06일차form01:배송정보form</title>
+
+    <style>
+        fieldset > ul > li {
+            list-style-type: none;
+            /* line-height: 3em; */
+            margin: 15px 0;
+        }
+
+        label {
+            width: 80px;
+            float:left;
+            /* float를 없애고 웹화면 비교해 볼 것. */
+            text-align: right;
+            margin-right: 10px;
+            /* 텍스트얼라인과 마진도 없애보고 웹화면 비교해 볼 것. */
+        }
+
+        div {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>배송 정보</h2>
+    <form action="" method="POST">
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li>
+                    <label for="user-name">이름</label>
+                    <input type="text" id="user-name">
+                </li>
+                <li>
+                    <label for="addr">배송 주소</label>
+                    <input type="text" id="addr">
+                </li>
+                <li>
+                    <label for="email">이메일</label>
+                    <input type="text" id="user-name">
+                </li>
+                <li>
+                    <label for="phone">연락처</label>
+                    <input type="text" id="phone">
+                </li>
+            </ul>
+            
+        </fieldset>
+        <div>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+        </div>
+
+    </form>
+    
+</body>
+</html>

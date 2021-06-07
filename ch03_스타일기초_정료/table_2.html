@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수업3일차2교시_2:표셀변형_교재88쪽이하</title>
+   
+   <style>
+        table {
+            border: 1px solid #ccc;
+            /* table border 속성은 표의 외부 테두리 설정해준다. */
+            /* width: 300px;
+            height: 200px; */
+            /*겹쳐진 선을 하나로 합칠 때 먹이는 속성 */
+        }
+
+        td {
+            border: 1px solid #ccc;
+            /* td border 속성은 표의 내부 테두리 설정해준다. */
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>표 셀변형:열 합치기</h2>
+    <table>
+        <!-- 표만들기는 먼저 tr 행 선언하고 나중에 td 열 선언한다.  -->
+        <tr>
+            <td rowspan="2"></td>
+            <!-- 열 2개를 합치기. 즉 여기선 행 전체가 된다.  -->
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <!-- <td></td> 1열을 합쳐주면 2행의 1열은 없애줘야 한다. -->
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    
+    <h2>표 셀변형:행 합치기</h2>
+    <table>
+        <!-- 표만들기는 먼저 tr 행 선언하고 나중에 td 열 선언한다.  -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <!-- 행 전체를 합칠때 colspan 속성 먹인다. -->
+            <!-- <td></td>
+            <td></td> -->
+        </tr>
+    </table>
+
+</body>
+
+</html>
+<!-- 정리중 -->

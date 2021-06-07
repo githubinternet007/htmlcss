@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제_수업04일차:표만들기예제</title>
+</head>
+<style>
+    table {
+        border: 1px solid #aaa;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid #aaa;
+        padding:10px 20px 10px 20px;
+        
+    }
+</style>
+<body>
+    <h1>수습 국원 지원 양식</h1>
+    <table>
+        <!-- 각각의 열의 속성을 넣을 때 col 태그로. 교재 95쪽 내외 참조-->
+        <col>
+        <col>
+        <col style="width:200px;">
+        
+        <tr>
+            <th rowspan="3">개인정보</th>
+            <th>이름</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>학과/학번</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>연락처</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>지원분야</th>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+    
+</body>
+</html>

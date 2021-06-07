@@ -1,0 +1,21 @@
+body {
+    background: pink;
+    width: 800px;
+}
+
+        h2 {
+            color:blue;
+        }
+
+        p {
+            color: green;
+            font-size: 18px;
+            font-family: 궁서;
+            line-height: 1.8;
+        }
+
+        span {
+            color: purple;
+        }
+
+    

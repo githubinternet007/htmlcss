@@ -1,0 +1,9 @@
+/* css 파일에는 style 태그 선언 안한다. */
+h2 {
+    color: green;
+}
+
+p {
+    font-family: "바탕";
+    font-weight: bold;
+}

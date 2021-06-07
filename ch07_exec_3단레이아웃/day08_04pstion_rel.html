@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수업08일04:position 연습예제Document</title>
+</head>
+<style>
+   * {
+       margin: 0 auto;
+   }
+   /* body {
+        background: url(images/bg.jpg); 
+    } */
+    
+    #contents {
+        height: 420px;
+        width: 640px;
+        border: 1px solid red;
+        background: url(images/bg.jpg) no-repeat;
+        background-size: cover;
+        position: relative;
+
+    }
+
+    h1 {
+        color: #fff;
+        font-size: 100px;
+        text-shadow: 2px 3px #555;
+        position: absolute;
+        right: 100px;
+        bottom: 100px;
+        margin: 0px;
+        /* 이 폰트는 기본 마진이 잡혀 있다. 이것을 제거해줘야 원하는 위치에 놓을 수 있다. 폰트의 기본 마진값도 검사해서 볼 것. */
+    }
+</style>
+
+<body>
+    <div id="contents">
+        <h1>CSS3</h1>
+    </div>
+    
+</body>
+</html>

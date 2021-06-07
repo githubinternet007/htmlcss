@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수업05일차_html_form03:옵션및체크박스</title>
+    <style>
+        fieldset {
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>신청과목</legend>
+            <p>이 달에 신청할 과목을 선택하세요(1과목만 가능함)</p>
+            <label for=""><input type="radio" name="subject" value="speaking">회화</label>
+            <label for=""><input type="radio" name="subject" value="speaking">문법</label>
+            <label for=""><input type="radio" name="subject" value="speaking">작문</label>
+        <!-- label 태그를 빼고 라디오 지정해줘도 되긴 되는데 label 태그를 감싸주면 작은화면에서 선택할 때 잘 눌러진다.  -->
+        <!-- 라디오버튼의 name값을 다르게 하면 모두 선택될 수 있으니 하나만 선택하게 하려면 이름값을 동일하게!!  -->
+        </fieldset>
+        
+        <fieldset>
+        <legend>메일링</legend>
+            <p>메일로 받고 싶은 뉴스 주제를 선택해 주세요(복수선택 가능)</p>
+            <label for=""> <input type="checkbox" name="mailings1" value="news">해외단신</label>
+            <label for=""> <input type="checkbox" name="mailings2" value="dialog">5분 회화</label>
+            <label for=""> <input type="checkbox" name="mailings3" value="pops">모닝팝스</label>
+        </fieldset>       
+
+    </form>
+    
+</body>
+</html>

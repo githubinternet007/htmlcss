@@ -1,0 +1,16 @@
+
+        body {
+            font-size: 1.2em;
+            /* 1em = 16px이다. 기본설정값이다.  */
+            /* body의 하위 요소들은 1.2em 크기로 맞춰진다. 상속된다.  */
+        }
+
+        h1 {
+            color: orange !important;
+           /*최우선 순위로 스타일을 먹이라는 선언  */
+        }
+
+        .rdtxt {
+            color: red;
+        }
+    

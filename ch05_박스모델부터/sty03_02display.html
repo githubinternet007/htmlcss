@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수업_sty03일차02:display속성</title>
+    <style>
+        #block img {
+            display: block;
+            margin: 10px;
+        }
+
+        #block .none { 
+            /* 주의) 그냥 .none 으로 지정하고 스타일 먹이면 사라지지 않는다. 부모 요소까지 불러내야 한다. */
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="default">
+        <img src="images/bear.jpg" alt="곰인형">
+        <img src="images/cat.jpg" alt="고양이사진">
+        <img src="images/photo.jpg" alt="손">
+    </div>
+
+    <div id="block">
+        <img src="images/bear.jpg" alt="곰인형">
+        <img src="images/cat.jpg" alt="고양이사진" class="none">
+        <img src="images/photo.jpg" alt="손">
+    </div>
+</body>
+
+</html>

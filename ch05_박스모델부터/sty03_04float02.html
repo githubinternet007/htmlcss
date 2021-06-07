@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수업_sty03일차04:float 배치02</title>
+    <style>
+        div {
+            /* width: 100px; */
+            /* height: 50px; */
+            /* div 요소에 width, height 값을 먹일 때와 안먹일 때의 box 디자인의 차이를 간파할 수 있나? */
+            margin: 20px;
+            padding:  10px 20px;
+        }
+        .box1 {
+            background-color: #ffff00;
+            float: left;
+        }
+        .box2 {
+            background-color: #ff00ff;
+            float: left;
+        }
+        .box3 {
+            background-color: #ff0000;
+            /* float: left; */
+            clear: both;
+            /* 이것은 float 속성을 해제한다.  */
+        }
+        .box4 {
+            background-color: #0000ff;
+            float:right;
+        }
+    </style>
+    </head>
+
+<body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+    <div class="box4">박스4</div>
+    </body>
+
+</html>

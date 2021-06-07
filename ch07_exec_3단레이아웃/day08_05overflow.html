@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수업08일05:overflow</title>
+    <style>
+        div {
+            width: 300px;
+            height: 100px;
+                    }
+
+                    #ex1 {
+                        float: left;
+                        overflow: visible; 
+                        /* overflow 디폴트값이다. */
+                        background-color: lightpink;
+                        margin-right: 20px;
+                    }
+                    #ex2 {
+                        float: left;
+                        overflow: hidden;
+                        background-color: yellow;
+                        /* display: inline-block; */
+                        margin-right: 20px;
+
+                    }
+
+                    #ex3 {
+                        float: left;
+                        overflow: auto;
+                        background-color: lightblue;
+                        /* display: inline-block; */
+                        margin-right: 20px;
+
+                    }
+    </style>
+</head>
+<body>
+    <div id="ex1">
+        <h2>overflow 속성 - visible</h2>
+        <p>CSS에서 overflow속성은 요소의 박스에 내용이 더 길 때 어떻게 보일지 선택하는 속성이다. 
+            -visible : 특정 요소가 박스를 넘어가도 그대로 보여준다.  <br>
+            -hidden : 부모 요소의 범위를 넘어가는 자식 요소의 부분은 보이지 않는다. <br>
+            -auto : 내용이 넘치면 스크롤바를 표시한다. 
+        </p>
+    </div>
+
+    <div id="ex2">
+        <h2>overflow 속성 - visible</h2>
+        <p>CSS에서 overflow속성은 요소의 박스에 내용이 더 길 때 어떻게 보일지 선택하는 속성이다. 
+            -visible : 특정 요소가 박스를 넘어가도 그대로 보여준다.  <br>
+            -hidden : 부모 요소의 범위를 넘어가는 자식 요소의 부분은 보이지 않는다. <br>
+            -auto : 내용이 넘치면 스크롤바를 표시한다. 
+        </p>
+    </div>
+    
+    <div id="ex3">
+        <h2>overflow 속성 - visible</h2>
+        <p>CSS에서 overflow속성은 요소의 박스에 내용이 더 길 때 어떻게 보일지 선택하는 속성이다. 
+            -visible : 특정 요소가 박스를 넘어가도 그대로 보여준다.  <br>
+            -hidden : 부모 요소의 범위를 넘어가는 자식 요소의 부분은 보이지 않는다. <br>
+            -auto : 내용이 넘치면 스크롤바를 표시한다. 
+        </p>
+    </div>
+
+    
+</body>
+</html>
