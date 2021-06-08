@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-table에서활용</title>
+    <style>
+        table {
+            border: 1px solid #6d6d6d;
+        }
+        /* td에서 보더속성을 설정하면 table에서는 빼도 된다. */
+        
+        td {
+            border: 1px solid #ccc;
+            width: 300px;
+            height: 50px;
+            text-align: center;
+        }
+        table, td {
+            border-collapse: collapse;
+        }
+
+        tr:nth-child(2n) {
+            background: #eee;
+        } /* 주기적 반복되는(홀수번째, 짝수번째 요소의 선택 : 2n=even, 2n+1=odd. 그리고 tr, td 구별 잘할 것 */
+        
+        tr:last-child {
+            background: yellow;
+        }        
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>건강에 좋은 식품</h1>
+        <table>
+            <tr>
+                <td>블루베리</td>
+            </tr>
+            <tr>
+                <td>귀리</td>
+            </tr>
+            <tr>
+                <td>토마토</td>
+            </tr>
+            <tr>
+                <td>시금치</td>
+            </tr>
+            <tr>
+                <td>적포도주</td>
+            </tr>
+            <tr>
+                <td>견과류</td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
